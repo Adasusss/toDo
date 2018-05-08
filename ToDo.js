@@ -5,9 +5,9 @@ $("ul").on("click", "li", function(){
 
 //delete
 $("ul").on("click", "span", function(event){
-    event.stopPropagation(); //zatrzymuje event (w tym wypadku nadanie klasy crossed)
+    event.stopPropagation(); //stops event
     $(this).parent().fadeOut(500, function(){
-    $(this).remove(); //usuwa li
+    $(this).remove(); //deletes li
     })
 })
 
